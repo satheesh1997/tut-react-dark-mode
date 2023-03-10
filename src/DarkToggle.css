@@ -1,0 +1,52 @@
+/* The icon before the label */
+.ui.toggle.checkbox.modeSwitchToggle label::before {
+    font-family: 'Icons' !important;
+    content: "\f185" !important;
+    text-align: right;
+    background-color: rgb(253, 253, 253) !important;
+    color: rgb(24, 26, 27) !important;
+    padding: 2px !important;
+    padding-right: 5px !important;
+    border: 1px solid black;
+}
+
+.ui.toggle.checkbox.modeSwitchToggle input:focus~label:before {
+    border: 1px solid black !important;
+}
+
+.ui.toggle.checkbox.modeSwitchToggle label::before:hover{
+    border: 1px solid black !important;
+}
+
+.ui.toggle.checkbox.modeSwitchToggle label:hover::before {
+    border: 1px solid black !important;
+}
+
+/* The checked icon before the label */
+.ui.toggle.checkbox.modeSwitchToggle input:checked~label::before {
+    font-family: 'Icons' !important;
+    content: "\f186" !important;
+    text-align: left;
+    background-color: rgb(24, 26, 27) !important;
+    color: rgb(255, 255, 255) !important;
+    padding: 2px !important;
+    padding-left: 5px !important;
+    border: 1px solid #61dafb
+}
+
+/* The focus state of the checked icon before the label */
+.ui.toggle.checkbox.modeSwitchToggle input:checked:focus~label::before {
+    background-color: rgb(24, 26, 27) !important;
+    border: 1px solid #61dafb !important;
+}
+
+/* The background color of the container after the label */
+.ui.toggle.checkbox.modeSwitchToggle input:checked~label::after {
+    background-color: rgb(247, 247, 245) !important;
+    border: 1px solid #61dafb !important;
+}
+
+/* The background color of the container without the label */
+.ui.toggle.checkbox.modeSwitchToggle input~label::after {
+    background-color: rgb(24, 26, 27) !important;
+}
