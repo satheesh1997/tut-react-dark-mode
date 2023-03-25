@@ -4,6 +4,7 @@ import { Checkbox } from "semantic-ui-react";
 import {
   enable as enableDarkMode,
   disable as disableDarkMode,
+  setFetchMethod,
 } from "darkreader";
 
 import "./DarkToggle.css";
@@ -14,6 +15,8 @@ export const DarkToggle = () => {
   const handlePreferredColorSchemeChange = () => {
     setIsDarkModeEnabled(!isDarkModeEnabled);
   };
+
+  setFetchMethod(window.fetch);
 
   useEffect(() => {
     if (isDarkModeEnabled) {
